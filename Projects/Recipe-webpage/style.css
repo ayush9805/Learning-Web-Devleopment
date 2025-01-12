@@ -1,0 +1,193 @@
+/* basic css resetting*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* importing the fonts from the google fonts */
+/* young serif font */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+/* importing the outfit font  */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+/* setting up the outer part of the main body */
+body {
+  
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+}
+
+.mainbody {
+  background-color: white;
+  width: 50%;
+  min-height: 100%; /* Ensure it fills the height */
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Other styles remain the same */
+figure img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.mainbody header {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.preparation {
+  background-color: hsl(330, 100%, 98%);
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.preparation ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.preparation .headings {
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients {
+  margin-top: 1rem;
+}
+
+.ingredients ol {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.instructions dl {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: square;
+  counter-reset: term-counter;
+}
+
+.definition-items dt,
+.definition-items dd {
+  display: inline;
+}
+
+.nutrition p {
+  margin-top: 1rem;
+}
+
+.table p,
+span {
+  display: inline;
+}
+
+span {
+  margin-left: 8rem;
+}
+
+.headings {
+  font-family: 'Outfit', serif;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: hsl(14, 45%, 36%);
+}
+
+.heading {
+  text-transform: capitalize;
+}
+
+/* Medium screen sizes (1200px to 1400px) */
+@media (max-width: 1400px) {
+  .mainbody {
+      width: 60%;
+      padding: 2rem;
+  }
+}
+
+/* Medium-small screens (1000px to 1200px) */
+@media (max-width: 1200px) {
+  .mainbody {
+      width: 70%;
+  }
+  figure img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+/* Small screens (768px to 1000px) */
+@media (max-width: 1000px) {
+  .mainbody {
+      width: 85%;
+      padding: 1.5rem;
+  }
+  header h1,
+  .headings {
+      font-size: 1.5rem;
+  }
+  figure img {
+      max-width: 100%;
+      height: auto;
+  }
+  .preparation, .ingredients, .instructions, .nutrition {
+      padding: 2rem;
+  }
+}
+
+/* Very small screens (540px to 768px) */
+@media (max-width: 768px) {
+  .mainbody {
+      width: 90%;
+      padding: 1rem;
+  }
+  header h1,
+  .headings {
+      font-size: 1.25rem;
+  }
+  .preparation ul,
+  .ingredients ol {
+      padding-left: 1rem;
+  }
+  .preparation, .ingredients, .instructions, .nutrition {
+      padding: 1.5rem;
+  }
+}
+
+/* Extra small screens (below 540px) */
+@media (max-width: 540px) {
+  .mainbody {
+      width: 100%;
+      padding: 0.5rem;
+  }
+  header h1,
+  .headings {
+      font-size: 1.2rem;
+  }
+  .preparation ul,
+  .ingredients ol {
+      padding-left: 0.5rem;
+  }
+  .preparation, .ingredients, .instructions, .nutrition {
+      padding: 1rem;
+  }
+}
