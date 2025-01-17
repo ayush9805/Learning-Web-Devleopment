@@ -9,8 +9,25 @@ body{
 
     height:100vh;
     width:auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 
 }
 
 
+
+.item
+{
+    border-radius:1rem;
+
+}
+button{
+
+    width:6rem;
+    height:auto;
+    border: 1px solid black;
+    border-radius:12px;
+
+}
     
