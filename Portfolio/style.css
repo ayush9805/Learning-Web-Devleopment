@@ -1,0 +1,156 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #1a1a2e, #16213e);
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    background-color: #0f3460;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #e94560;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+    color: #e94560;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.introduction {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.introduction h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.introduction p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.hire-button {
+    display: inline-block;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hire-button:hover {
+    background-color: #1f4068;
+}
+
+/* Profile Picture */
+.profilepic {
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid #e94560;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.profilepic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+    margin-left:40%;
+    
+}
+.skills li {
+    font-size: 18px;
+    margin: 0.5rem 0;
+}
+.skills span{
+    color:pink;
+
+}
+
+
+.contact a {
+    color: #e94560;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introduction {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .profilepic {
+        margin: 0 auto;
+    }
+}
