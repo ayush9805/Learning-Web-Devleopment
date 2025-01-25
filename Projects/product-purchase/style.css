@@ -107,9 +107,18 @@ background-color:hsl(20, 50%, 98%);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1)
 
 }
+ .item button.active
+{
+    background-color:red;
+    
+}
 .text{
     margin-top:1.2rem;
     font-size:8px;
     width:12rem
 
+}
+.counter
+{
+    visibility: hidden;
 }
