@@ -1,33 +1,115 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
 
 }
 body{
-
+    width:100vw;
     height:100vh;
-    width:auto;
+    font-family: "Red Hat Text", serif;
+    background-color: hsl(13, 31%, 94%);
+}
+header{
+  padding-top:3rem;
+  padding-left:6rem;
+  padding-bottom:2rem;
+  font-size:1.5em;
+    color:hsl(14, 65%, 9%);
+}
+.maincontainer
+{
+  width:60%;
+  height:auto;
+  display:flex;
+  flex-wrap:wrap;
+  padding-left:5rem;
+  
+}
+.item
+{
+    width:30%;
+    height:auto;
+    padding-bottom:1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    
+}
+.item img{
+    border-radius:12px;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1)
+}
+.item .text p{
+    font-size:12px;
+     color:hsl(14, 86%, 42%);
+     font-weight:600;
+}
+.item .text h2
+{
+    font-size:12px;
+    font-weight:600;
+    color:hsl(14, 65%, 9%);
+}
+.item .text h3
+{
+    color:hsl(7, 20%, 60%);
+    font-weight:400;
+}
+
+.cart
+{
+background-color:hsl(20, 50%, 98%);
+  width:20rem;
+  height:16rem;
+  border-radius:10px;
+  position:absolute;
+  top:5rem;
+  left:55%;
+  text-align:center;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1)
+
+
+}
+
+.cart h1
+{
+    margin-top:1rem;
+    font-size:1.5rem;
+    text-align:left;
+    padding:1rem;
+    color:hsl(14, 86%, 42%);
+    font-weight:700;
+}
+.cart p{
+    color: hsl(14, 25%, 72%);
+    font-weight:400;
+   
+}
+.item button{
+    width:55%;
+    height:1.8rem;
+    z-index:1;
+    position:absolute;
+    top:185px;
+    border-radius:1rem;
+    border:1px solid hsl(12, 20%, 44%);
     display:flex;
     justify-content: center;
     align-items:center;
+    gap:4px;
+    font-size:12px;
+    font-weight:600;
+    color:hsl(14, 65%, 9%);
+    font-weight:400;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1)
 
 }
-
-
-
-.item
-{
-    border-radius:1rem;
+.text{
+    margin-top:1.2rem;
+    font-size:8px;
+    width:12rem
 
 }
-button{
-
-    width:6rem;
-    height:auto;
-    border: 1px solid black;
-    border-radius:12px;
-
-}
-    
