@@ -4,8 +4,8 @@ buttons.forEach(button =>
 {
     button.addEventListener('click' ,() =>{
     
-    button.classList.toggle("active");
-    text.style.display = "block";
+    button.style.display = red;
+    
 
 
 
